@@ -12,16 +12,17 @@
 
 .box
 {
-
+    border: 1px solid blue;
+    background-color: #f8fa9d;
 }
 .header
 {
-
+    grid-area: homelink;
 }
 
 .sidebar
 {
-
+    grid-area blog;
 }
 
 .content
@@ -31,7 +32,7 @@
 
 .footer
 {
-
+    grid-area: socials;
 }
 
 /* Media query to determine if viewport is of 'tablet' width */
