@@ -1,9 +1,15 @@
+body
+{
+    background-color: wheat;
+}
+
 .container
 {
     display:grid;
-    height:90vx;
-    grid-template-columns: 350px;
-    grid-template-rows: 4fr 4fr 250px 800px;
+    width: 100vw;
+    height:100vh;
+    grid-template-columns: 90vw;
+    grid-template-rows: 10vw 10vw 1fr 10vw;
     grid-template-areas:
     "homelink"
     "bloglist"
@@ -19,22 +25,22 @@
     border: 1px solid black;
     background-color: #f8fa9d;
 }
-.header
+.homelink
 {
     grid-area: homelink;
 }
 
-.sidebar
+.bloglist
 {
     grid-area: bloglist;
 }
 
-.content
+.blog
 {
-    grid-area blog;
+    grid-area: blog;
 }
 
-.footer
+.socials
 {
     grid-area: socials;
 }
@@ -42,52 +48,53 @@
 #socialsgrid
 {
     display:grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: 180px;
-    border-right: double aquamarine;
-    grid-gap:5px;
+    grid-template-rows: 10vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .socialsdisplay
 {
-    width: 1fr;
-    height: 1fr;
-
-    border: 1px solid red;
-    background: purple
-    width: 250px
-    height: 250px;
-
+    display:grid;
+    height: 8vw;
+    grid-template-columns: repeat(5, 10vw);
+    grid-gap: 1vh;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+    "li gh bs ig tw";
 }
 
 #linkedin
 {
     background-image: url(/img/LinkedIn_logo_initials.png);
-    background-size: contain;
+    background-size: 50px 50px;
     background-repeat: no-repeat;
+    grid-area: li;
 }
 #github
 {
     background-image: url(/img/github-mark.svg);
-    background-size: contain;
+    background-size: 50px 50px;
     background-repeat: no-repeat;
+    grid-area: gh;
 }
 #bluesky
 {
     background-image: url(/img/Bluesky_Logo.svg);
-    background-size: contain;
+    background-size: 50px 50px;
     background-repeat: no-repeat;
 }
 #instagram
 {
     background-image: url(/img/Instagram_logo_2016.svg);
-    background-size: contain;
+    background-size: 50px 50px;
     background-repeat: no-repeat;
 }
 #twitter
 {
     background-image: url(/img/Logo_of_Twitter.svg);
-    background-size: contain;
+    background-size: 50px 50px;
     background-repeat: no-repeat;
 }
 
