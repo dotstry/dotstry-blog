@@ -1,7 +1,8 @@
-body
-{
-    background-color: wheat;
-}
+@import url(blogstylesheet.css);
+@import url(socialsstylesheet.css);
+@import url(blogstylesheet.css);
+@import url(blogstylesheet.css);
+@import url(blogstylesheet.css);
 
 .container
 {
@@ -45,69 +46,3 @@ body
     grid-area: socials;
 }
 
-#socialsgrid
-{
-    display:grid;
-    grid-template-rows: 10vh;
-    align-items: center;
-    justify-content: center;
-}
-
-.socialsdisplay
-{
-    display:grid;
-    height: 8vw;
-    grid-template-columns: repeat(5, 10vw);
-    grid-gap: 1vh;
-    justify-content: center;
-    align-items: center;
-    grid-template-areas:
-    "li gh bs ig tw";
-}
-
-#linkedin
-{
-    background-image: url(/img/LinkedIn_logo_initials.png);
-    background-size: 50px 50px;
-    background-repeat: no-repeat;
-    grid-area: li;
-}
-#github
-{
-    background-image: url(/img/github-mark.svg);
-    background-size: 50px 50px;
-    background-repeat: no-repeat;
-    grid-area: gh;
-}
-#bluesky
-{
-    background-image: url(/img/Bluesky_Logo.svg);
-    background-size: 50px 50px;
-    background-repeat: no-repeat;
-}
-#instagram
-{
-    background-image: url(/img/Instagram_logo_2016.svg);
-    background-size: 50px 50px;
-    background-repeat: no-repeat;
-}
-#twitter
-{
-    background-image: url(/img/Logo_of_Twitter.svg);
-    background-size: 50px 50px;
-    background-repeat: no-repeat;
-}
-
-/* Media query to determine if viewport is of 'tablet' width */
-/* 361 was chosen as width for smallest device size following a search of the most common non-tablet mobile device resolutions*/
-@media(min-width: 361px) and (max-width:600px)
-{
-
-}
-
-/* Media query to determine if viewport is of 'large' width*/
-/* 601 was chosen as minimum width for largest device size as it is larger than the average tablet device resolution */
-@media(min-width: 601px)
-{
-
-}

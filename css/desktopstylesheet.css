@@ -1,0 +1,6 @@
+/* Media query to determine if viewport is of 'large' width*/
+/* 601 was chosen as minimum width for largest device size as it is larger than the average tablet device resolution */
+@media(min-width: 601px)
+{
+
+}

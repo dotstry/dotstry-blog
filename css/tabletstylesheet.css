@@ -1,0 +1,6 @@
+/* Media query to determine if viewport is of 'tablet' width */
+/* 361 was chosen as width for smallest device size following a search of the most common non-tablet mobile device resolutions*/
+@media(min-width: 361px) and (max-width:600px)
+{
+
+}
