@@ -1,8 +1,9 @@
+@import url(homelinkstylesheet.css);
+@import url(blogliststylesheet.css);
 @import url(blogstylesheet.css);
 @import url(socialsstylesheet.css);
-@import url(blogstylesheet.css);
-@import url(blogstylesheet.css);
-@import url(blogstylesheet.css);
+@import url(tabletstylesheet.css);
+@import url(desktopstylesheet.css);
 
 .container
 {

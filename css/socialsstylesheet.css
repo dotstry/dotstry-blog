@@ -8,8 +8,10 @@
 
 .socialsdisplay
 {
+    margin-top: 1vh;
     display:grid;
-    height: 8vw;
+    height: 4vw;
+    width: 100%;
     grid-template-columns: repeat(5, 10vw);
     grid-gap: 1vh;
     justify-content: center;
@@ -21,32 +23,32 @@
 #linkedin
 {
     background-image: url(/img/LinkedIn_logo_initials.png);
-    background-size: 50px 50px;
+    background-size: 50% 100%;
     background-repeat: no-repeat;
     grid-area: li;
 }
 #github
 {
     background-image: url(/img/github-mark.svg);
-    background-size: 50px 50px;
+    background-size: 50% 100%;
     background-repeat: no-repeat;
     grid-area: gh;
 }
 #bluesky
 {
     background-image: url(/img/Bluesky_Logo.svg);
-    background-size: 50px 50px;
+    background-size: 50% 100%;
     background-repeat: no-repeat;
 }
 #instagram
 {
     background-image: url(/img/Instagram_logo_2016.svg);
-    background-size: 50px 50px;
+    background-size: 50% 100%;
     background-repeat: no-repeat;
 }
 #twitter
 {
     background-image: url(/img/Logo_of_Twitter.svg);
-    background-size: 50px 50px;
+    background-size: 50% 100%;
     background-repeat: no-repeat;
 }
