@@ -10,10 +10,42 @@
 {
     
     display:grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 20%);
-    grid-gap: 1vh;
+    width: 90%;
+    grid-template-columns: repeat(4, 20%);
+    grid-gap: 5vh;
     align-items: center;
-    grid-template-areas:
-    "blog1 blog2 blog3";
+    /* Removed grid template areas, as unordered list actually makes better sense for the design */
+    /*grid-template-areas:
+    "blog0 blog1 blog2 blog3"; */
 }
+
+ul
+{
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    grid-gap: 2%;
+}
+/*
+
+#blogentry0
+{
+    grid-area: blog0;
+    border: 2px solid orange;
+}
+
+#blogentry1
+{
+    grid-area: blog1;
+}
+
+#blogentry2
+{
+    grid-area: blog2;
+}
+
+#blogentry3
+{
+    grid-area: blog3;
+}
+*/
