@@ -2,5 +2,19 @@
 /* 361 was chosen as width for smallest device size following a search of the most common non-tablet mobile device resolutions*/
 @media(min-width: 361px) and (max-width:600px)
 {
-
+    .container
+    {
+        display:grid;
+        width: 100vw;
+        height:100vh;
+        grid-template-columns: 30vw 60vw;
+        grid-template-rows: 10vw 1fr 10vw;
+        grid-template-areas:
+        "homelink homelink"
+        "bloglist" "blog"
+        "socials" "socials";
+        /* TODO: remove container border once layout is complete */
+        /* border: 2px solid yellow; */
+        justify-content: center;
+    } 
 }
