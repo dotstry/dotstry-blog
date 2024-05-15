@@ -38,7 +38,7 @@
     /* width: 100vw; */
     /* height:100vh; */
     grid-template-columns: 90vw;
-    grid-template-rows: auto auto max-content auto;
+    grid-template-rows: 10vh max-content 10vh 10vh;
     grid-template-areas:
     "homelink"
     "blog"
@@ -77,12 +77,12 @@
         display:grid;
         /* width: 100vw;
         height:100vh; */
-        grid-template-columns: 30vw 60vw;
+        grid-template-columns: 15vw 60vw 15vw;
         grid-template-rows: 10vw max-content 10vw;
         grid-template-areas:
-        "homelink homelink"
-        "bloglist blog"
-        "socials socials";
+        "homelink homelink homelink"
+        "blog blog bloglist"
+        "socials socials socials";
         /* TODO: remove container border once layout is complete */
         /* border: 2px solid yellow; */
         justify-content: center;

@@ -11,7 +11,7 @@
     margin-top: 1vh;
     display:grid;
     height: 4vw;
-    width: 100%;
+    /*width: 100%; */
     grid-template-columns: repeat(5, 10vw);
     grid-gap: 1vh;
     justify-content: center;
@@ -48,7 +48,7 @@
 }
 #twitter
 {
-    background-image: url(/img/Logo_of_Twitter.svg);
+    background-image: url(/static/img/Logo_of_Twitter.svg);
     background-size: 50% 100%;
     background-repeat: no-repeat;
 }

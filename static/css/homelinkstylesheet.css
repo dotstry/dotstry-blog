@@ -29,3 +29,14 @@
     grid-area: profile;
     justify-content: center;
 }
+
+@media(min-width:600px)
+{
+    ul
+    {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+}

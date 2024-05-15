@@ -23,17 +23,19 @@ ul
 {
     list-style-type: none;
     display:flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     grid-gap: 2%;
 }
 
 @media(min-width:600px)
-ul
 {
-    list-style-type: none;
-    display:flex;
-    flex-direction: row;
-    grid-gap: 50%;
+    ul
+    {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
 }
 /*
 
