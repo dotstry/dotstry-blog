@@ -2,5 +2,19 @@
 /* 601 was chosen as minimum width for largest device size as it is larger than the average tablet device resolution */
 @media(min-width: 601px)
 {
-
+    .container
+    {
+        display:grid;
+        width: 100vw;
+        height:100vh;
+        grid-template-columns: 30vw 60vw;
+        grid-template-rows: 10vw 1fr 10vw;
+        grid-template-areas:
+        "homelink homelink"
+        "bloglist" "blog"
+        "socials" "socials";
+        /* TODO: remove container border once layout is complete */
+        /* border: 2px solid yellow; */
+        justify-content: center;
+    } 
 }
