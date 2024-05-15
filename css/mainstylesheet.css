@@ -2,26 +2,11 @@
 @import url(blogliststylesheet.css);
 @import url(blogstylesheet.css);
 @import url(socialsstylesheet.css);
-@import url(tabletstylesheet.css);
-@import url(desktopstylesheet.css);
+/* @import url(tabletstylesheet.css);
+@import url(desktopstylesheet.css); */
 @import url(textconfiguration.css);
 
-.container
-{
-    display:grid;
-    width: 100vw;
-    height:100vh;
-    grid-template-columns: 90vw;
-    grid-template-rows: 10vw 10vw 1fr 10vw;
-    grid-template-areas:
-    "homelink"
-    "bloglist"
-    "blog"
-    "socials";
-    /* TODO: remove container border once layout is complete */
-    /* border: 2px solid yellow; */
-    justify-content: center;
-}
+
 
 .box
 {
@@ -48,3 +33,60 @@
     grid-area: socials;
 }
 
+/* grid for minimum/mobile width */
+.container
+{
+    display:grid;
+    width: 100vw;
+    height:100vh;
+    grid-template-columns: 90vw;
+    grid-template-rows: 10vh 10vh max-content 10vh;
+    grid-template-areas:
+    "homelink"
+    "bloglist"
+    "blog"
+    "socials";
+    /* TODO: remove container border once layout is complete */
+    /* border: 2px solid yellow; */
+    justify-content: center;
+}
+
+/* Media query to determine if viewport is of 'tablet' width */
+/* 361 was chosen as width for smallest device size following a search of the most common non-tablet mobile device resolutions*/
+@media(min-width:600px)
+{
+    .container
+    {
+        display:grid;
+        width: 100vw;
+        height:100vh;
+        grid-template-columns: 30vw 60vw;
+        grid-template-rows: 10vw max-content 10vw;
+        grid-template-areas:
+        "homelink homelink"
+        "bloglist blog"
+        "socials socials";
+        /* TODO: remove container border once layout is complete */
+        /* border: 2px solid yellow; */
+        justify-content: center;
+    } 
+}
+
+@media(min-width:1200px)
+{
+    .container
+    {
+        display:grid;
+        width: 100vw;
+        height:100vh;
+        grid-template-columns: 30vw 60vw;
+        grid-template-rows: 10vw max-content 10vw;
+        grid-template-areas:
+        "homelink homelink"
+        "bloglist blog"
+        "socials socials";
+        /* TODO: remove container border once layout is complete */
+        /* border: 2px solid yellow; */
+        justify-content: center;
+    } 
+}
