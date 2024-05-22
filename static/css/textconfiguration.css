@@ -27,3 +27,17 @@ a
     color: blueviolet;
 }
 
+b
+{
+    font-weight: bold;
+}
+
+u
+{
+    text-decoration: underline;
+}
+
+q
+{
+    font-style:italic;
+}

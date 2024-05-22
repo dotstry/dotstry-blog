@@ -38,7 +38,7 @@
     /* width: 100vw; */
     /* height:100vh; */
     grid-template-columns: 90vw;
-    grid-template-rows: 10vh max-content 10vh 10vh;
+    grid-template-rows: max-content max-content max-content 10vh;
     grid-template-areas:
     "homelink"
     "blog"
@@ -59,7 +59,7 @@
         width: 100vw;
         height:100vh;
         grid-template-columns: 30vw 60vw;
-        grid-template-rows: 10vw max-content 10vw;
+        grid-template-rows: max-content max-content 10vw;
         grid-template-areas:
         "homelink homelink"
         "bloglist blog"
@@ -78,7 +78,7 @@
         /* width: 100vw;
         height:100vh; */
         grid-template-columns: 15vw 60vw 15vw;
-        grid-template-rows: 10vw max-content 10vw;
+        grid-template-rows: max-content max-content 10vw;
         grid-template-areas:
         "homelink homelink homelink"
         "blog blog bloglist"
